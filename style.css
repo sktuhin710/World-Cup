@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container{
+    width: 80%;
+    margin: auto;   
+}
+.banner{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
+    margin-top: 30px;
+    border-radius: 20px
+}
+
+.banner-text{
+    color: #FFF;
+    width: 50%;
+    padding: 0 70px;
+    
+}
+
+.banner-img{
+    width: 50%;
+    padding: 70px 70px 0 50px;
+    position: relative;
+    top: 7px;
+    
+}
+.banner-img img{
+    width: 100%;
+}
+
+.banner-text h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+
+.banner-text p{
+    font-size: 14px;
+padding-bottom: 15px ;
+text-align: justify;
+margin-bottom: 15px;
+
+}
+
+.banner-btn{
+    background-color: #DD0000;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+}
+
+/*----------------- 
+Container-2 
+-------------------*/
+
+.article{
+    display: flex;
+    column-gap: 20px;
+}
+
+.content{
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+.container-2{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.article .side-manu{
+    background-color: black;
+    width: 20%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+   gap: 20px;  
+   padding: 20px;  
+   border-radius: 7px;  
+}
+.side-button{
+    border-radius: 7px;
+    background-color:rgb(255, 255, 255); 
+    color: #000000;
+     padding: 10px 20px;
+     border: none;
+     font-weight: 500;
+
+}
+
+.side-button-color{
+   background-color:#DD0000; 
+   color: #FFF;
+}
+
+.content{
+    width: 80%;
+}
+
+.content-img img{
+    width: 100%;
+}
+  
+.content-footer{
+    display: flex;
+    column-gap: 20px;
+   align-items: center;
+}
+.content-f1,.content-f2{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.content-f1 img,.content-f2 img{
+width: 18px;
+height: 18px;
+}
+
+.content-f1 span,.content-f2 span{
+    margin-left: 5px;
+}
+    
+.content-button button{
+background-color: #DD0000;
+color: #FFF;
+border: none;
+}
+    
+
+.footer-1{
+    height: 300px;
+    background-color: #161616;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------
+Responsive
+---------------- */
+
+@media (max-width: 576px) { 
+.container{
+    width: 100%;
+}
+.banner{
+    margin-top: 0;
+    border-radius: 0;
+  flex-direction: column;
+}
+
+.banner-text{
+    color: #FFF;
+    width: 90%;
+    padding: 0 70px;
+    
+}
+.banner-text h1{
+    font-size: 2em;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.banner-text p{
+    font-size: 10px;
+}
+.banner-img{
+    width: 80%;
+    margin: auto;
+    padding: 70px 70px 0 50px;
+}
+.container-2{
+    width: 100%;
+}
+.article{
+    flex-direction: column;
+    row-gap: 20px;
+}
+.article .side-manu{
+    width: 80%;
+   margin: auto;
+}
+.content{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    
+    
+}
+
+
+ }
